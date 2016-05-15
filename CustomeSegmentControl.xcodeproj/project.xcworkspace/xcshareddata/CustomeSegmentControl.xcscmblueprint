@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "40DDBDD1BE36261DD07130FE44D7166D7851B77B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "40DDBDD1BE36261DD07130FE44D7166D7851B77B" : 0,
+    "FFE24F389406B1F391DB9871335FD2002CC30A72" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8086850C-E877-4584-9EBF-555AB10A8838",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "40DDBDD1BE36261DD07130FE44D7166D7851B77B" : "ZLCustomeSegmentControlView\/",
+    "FFE24F389406B1F391DB9871335FD2002CC30A72" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CustomeSegmentControl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CustomeSegmentControl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/ZLCustomeSegmentControlView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "40DDBDD1BE36261DD07130FE44D7166D7851B77B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/SwiftDelegateDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FFE24F389406B1F391DB9871335FD2002CC30A72"
+    }
+  ]
+}

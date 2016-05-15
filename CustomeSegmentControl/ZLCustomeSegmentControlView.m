@@ -27,22 +27,30 @@
 @end
 
 @implementation ZLCustomeSegmentControlView
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)init
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
-        _viewWidth = frame.size.width;
-        _viewHeight = frame.size.height;
-        _duration = DEFAULT_DURATION;
+         _duration = DEFAULT_DURATION;
     }
     return self;
 }
 
 - (void)layoutSubviews{
+    
+    _viewWidth = super.frame.size.width;
+    _viewHeight = super.frame.size.height;
+    [self removeAllSubView];
+    
+
     [self customeData];
     [self createBottomLabels];
     [self createTopLables];
     [self createTopButtons];
+    
+    [self layoutIfNeeded];
+
+
 }
 
 -(void) setButtonOnClickBlock: (ButtonOnClickBlock) block {
@@ -50,6 +58,23 @@
         _buttonBlock = block;
     }
 }
+
+- (void)removeAllSubView {
+    [self removeSubView:_heightLightView];
+    [self removeSubView:_heightTopView];
+    [self removeSubView:_heightColoreView];
+    [self.labelMutableArray removeAllObjects];
+    
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+}
+
+- (void)removeSubView: (UIView *) subView {
+    [subView removeFromSuperview];
+    subView = nil;
+}
+
 
 /**
  *  提供默认值
