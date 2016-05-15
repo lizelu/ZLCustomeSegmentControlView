@@ -24,6 +24,8 @@
 @property (nonatomic, strong) NSMutableArray * labelMutableArray;
 @property (nonatomic, strong) ButtonOnClickBlock buttonBlock;
 
+@property (nonatomic, strong) UIButton * currentTapButton;
+
 @end
 
 @implementation ZLCustomeSegmentControlView
@@ -49,6 +51,10 @@
     [self createTopButtons];
     
     [self layoutIfNeeded];
+    
+    if (_currentTapButton != nil) {
+        [self tapButton:_currentTapButton];
+    }
 
 
 }
@@ -191,6 +197,8 @@
  */
 - (void)tapButton:(UIButton *) sender {
     
+    
+    _currentTapButton = sender;
     if (_buttonBlock && sender.tag < _titles.count) {
         _buttonBlock(sender.tag, _titles[sender.tag]);
     }
