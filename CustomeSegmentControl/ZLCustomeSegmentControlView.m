@@ -42,6 +42,7 @@
     
     _viewWidth = super.frame.size.width;
     _viewHeight = super.frame.size.height;
+    
     [self removeAllSubView];
     
 
@@ -66,14 +67,17 @@
 }
 
 - (void)removeAllSubView {
-    [self removeSubView:_heightLightView];
-    [self removeSubView:_heightTopView];
-    [self removeSubView:_heightColoreView];
-    [self.labelMutableArray removeAllObjects];
-    
-    for (UIView *view in self.subviews) {
-        [view removeFromSuperview];
+    if (_heightColoreView != nil) {
+        [self removeSubView:_heightLightView];
+        [self removeSubView:_heightTopView];
+        [self removeSubView:_heightColoreView];
+        [self.labelMutableArray removeAllObjects];
+        
+        for (UIView *view in self.subviews) {
+            [view removeFromSuperview];
+        }
     }
+    
 }
 
 - (void)removeSubView: (UIView *) subView {
